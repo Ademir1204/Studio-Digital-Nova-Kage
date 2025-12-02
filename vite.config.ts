@@ -26,6 +26,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/', // ESTA É A LINHA QUE ESTAVA FALTANDO
+  // ESTA LINHA É CRUCIAL PARA O VERCEL/GITHUB PAGES
+  base: '/', 
   plugins: [react()],
 })
